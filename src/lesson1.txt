@@ -1,0 +1,24 @@
+React is an open-source JavaScript library for building user interfaces (UIs) and user interface components(JavaScript functions)
+
+React uses a declarative approach to define how your UI should look based on the current application state.
+
+Component: React components receive data and return what should appear on the screen.
+
+Props: Props (short for properties) are a way to pass data from parent components to child components.
+
+Key: Keys help React identify which items have changed, added, or removed.
+
+State: React components can have internal state, which allows them to store and manage data that can change over time.
+When the state changes, React re-renders the component.
+
+useState() hook works by handling and managing state in applications.
+     useState accepts an initial state and returns two values:
+- The current state.
+- A function that updates the state.
+
+useEffect allows to perform side effects in functional components(data fetching, DOM manipulation)
+        useEffect hook takes two arguments:
+  - A function that contains the code to run when the side effect should be executed.
+  - An optional dependency array that determines when the effect should run.
+        *[empty dependency array] - indicates that the effect should run only after the initial render of the component
+        *[non-empty dependency array] - will run whenever any of the specified dependencies change
