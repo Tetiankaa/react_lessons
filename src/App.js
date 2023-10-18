@@ -1,28 +1,44 @@
 import React, {useState} from 'react';
 import {ListGroup} from "./components/ListGroup/ListGroup";
-import {Alert} from "./components/Alert";
-import {Button} from "./components/Button";
-
+import {Alert} from "./components/Button/Alert";
+import {Button} from "./components/Button/Button";
+import {Like} from "./components/Like/Like";
+import {Products} from './components/Products'
+import {ShoppingCart} from "./components/ShoppingCart/ShoppingCart";
+import {Game} from './components/Game';
+import {ExpandableText} from './components/ExpandableText';
 const App = () => {
-    const items = ["New York", "San Francisco", "Tokyo", "London"];
-
-    const handleSelectItem = (item:string)=>{
-        console.log(item);
-    }
+    // const items = ["New York", "San Francisco", "Tokyo", "London"];
+    //
+    // const handleSelectItem = (item:string)=>{
+    //     console.log(item);
+    // }
     // let handleClick = () => console.log('Clicked')
     // let [alertVisible, setAlertVisibility] = useState(false);
 
     return (
+        // <div>
+        //     {/*<ListGroup items={items} heading={"Cities"} onSelectItem={handleSelectItem}/>*/}
+        //
+        //         {/*<Alert>*/}
+        //         {/*    Hello <strong>World</strong>*/}
+        //         {/*</Alert>*/}
+        //
+        //     {/*{alertVisible && <Alert children={'My alert'} onClose={()=>setAlertVisibility(false)}/>}*/}
+        //
+        //     {/*<Button onClick={()=>setAlertVisibility(true)} children={"Click"} color={"primary"}/>*/}
+        // {/*<Like onClick={handleClick} />*/}
+        //
+        //     {/*<Products/>*/}
+        //
+        // </div>
+
         <div>
-            <ListGroup items={items} heading={"Cities"} onSelectItem={handleSelectItem}/>
+            {/*<ShoppingCart/>*/}
 
-            {/*    <Alert>*/}
-            {/*        Hello <strong>World</strong>*/}
-            {/*    </Alert>*/}
+            {/*<Game/>*/}
 
-            {/*{alertVisible && <Alert children={'My alert'} onClose={()=>setAlertVisibility(false)}/>}*/}
-
-            {/*<Button onClick={()=>setAlertVisibility(true)} children={"Click"}/>*/}
+            <ExpandableText maxChars={50}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus alias amet, architecto aut autem culpa dolore eum exercitationem explicabo facere hic iste itaque iusto labore minima nesciunt officiis perferendis provident tenetur. Aliquam consequatur cum, dicta et facilis fuga iure magni molestiae numquam quidem, reprehenderit repudiandae saepe voluptatibus? Alias commodi deserunt doloribus dolorum, fugiat necessitatibus nesciunt officia perferendis possimus praesentium quibusdam similique sunt temporibus velit voluptas voluptatibus voluptatum. Alias aliquam architecto aspernatur, at beatae commodi culpa delectus eum expedita explicabo facilis fugiat harum ipsa ipsam laborum libero molestiae necessitatibus nihil nostrum quasi quos recusandae reprehenderit saepe soluta totam voluptatem voluptatibus voluptatum. At autem consectetur distinctio dolore ducimus enim esse eveniet expedita facere hic illum, in, magni modi neque nesciunt, nisi non numquam provident quae quidem ratione reiciendis reprehenderit saepe sunt tenetur ut vitae. Alias aperiam aspernatur atque blanditiis commodi dignissimos fuga incidunt molestias nam praesentium quaerat rem repellendus veritatis, voluptatum?</ExpandableText>
 
         </div>
     );
