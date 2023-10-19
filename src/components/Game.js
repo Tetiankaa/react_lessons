@@ -30,7 +30,7 @@ const Game = () => {
         ]
     })
     const handleClick = () =>{
-        setCart({...cart,items: cart.items.map(item=> item.id === 1 ? {...item, quantity:item.quantity++ } : item)})
+        setCart({...cart, items: cart.items.map(item=> item.id === 1 ? {...item, quantity:item.quantity++ } : item)})
     }
     return (
         <div>
