@@ -1,0 +1,13 @@
+CSS Modules guaranteed that all the styles for a single component live in one place and only apply to that component.
+
+Axios is a JavaScript library that is used for making HTTP requests in web applications.
+Axios can automatically serialize request data as JSON and parse response data into JavaScript objects.
+
+axios.create is a method that is used to create a new Axios instance with custom configuration.
+The configuration object can include various options, such as:
+
+- baseURL
+- Headers: is used to set default headers for all requests made with this instance.
+- Timeout: is used to set a default timeout for requests.
+
+axios.get is used to fetch data from APIs, retrieve information from a server
