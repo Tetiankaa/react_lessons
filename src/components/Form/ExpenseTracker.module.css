@@ -1,0 +1,25 @@
+.Error{
+    color: #c02424;
+    margin: 5px 0 5px 0;
+}
+.Button{
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+    width: 70px;
+    height: 30px;
+    border-style: none;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.Input{
+    border-radius: 7px;
+    width: 300px;
+    height: 30px;
+    border: 1px solid #8d8b8b;
+
+}
+.Input:focus{
+    border: 3px solid blue;
+    outline: none;
+}
