@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {StrictMode, useState} from 'react';
 import {ListGroup} from "./components/ListGroup/ListGroup";
 import {Alert} from "./components/Button/Alert";
 import {Button} from "./components/Button/Button";
@@ -14,6 +14,9 @@ import {Form4Zod} from "./components/Form/Form4_ZOD";
 import {ExpenseForm} from "./components/Form/ExpenseForm";
 import {ExpenseList} from "./components/Form/ExpenseList";
 import {Expense} from "./components/Form/Expense";
+import {ProductList} from "./components/ProductList/ProductList";
+import {ProductSelect} from "./components/ProductList/ProductSelect";
+import {Users} from "./components/JsonPlaceholder/Users";
 const App = () => {
     // const items = ["New York", "San Francisco", "Tokyo", "London"];
     //
@@ -51,7 +54,11 @@ const App = () => {
         {/*    <Form3/>*/}
         {/*<Form4Zod/>*/}
 
-           <Expense/>
+           {/*<Expense/>*/}
+
+           {/*<ProductSelect/>*/}
+
+            <Users/>
         </div>
     );
 };
