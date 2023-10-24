@@ -1,0 +1,17 @@
+useRef hook is used to reference a value that’s not needed for rendering.
+useRef returns an object with a single property:
+        current - it’s set to the initialValue we have passed
+When we change the current property, React does not re-render component.
+
+prevState - holds the value of the state before setState was triggered
+
+useForm is a custom hook for managing forms.
+    -register: allows to register an input
+    -handleSubmit: will receive the form data if form validation is successful
+    -reset: reset the entire form state
+    -formState: contains information about the entire form state (errors, isValid)
+mode:{} - allows to configure the validation strategy before a user submits the form
+
+resolver:{} - allows to use any external validation library (Yup, Zod, Joi, Vest, Ajv) (npm install @hookform/resolvers)
+
+setValue - allows dynamically to set the value of a registered field and have the options to validate and update the form state
