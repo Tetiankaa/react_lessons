@@ -3,7 +3,8 @@ import {useForm} from "react-hook-form";
 import css from './ExpenseTracker.module.css';
 
 const ExpenseForm = ({onSubmit}) => {
-    const {register, handleSubmit, reset, formState: {errors}} = useForm();
+    const {register, handleSubmit, reset, formState: {errors}}
+        = useForm();
 
     const [info, setInfo] = useState({description:'', amount:0, category:''});
 
