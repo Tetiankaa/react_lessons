@@ -1,0 +1,23 @@
+Routing is the process of navigating between different components within a single-page application.
+
+createBrowserRouter - it uses the DOM History API to update the URL and manage the history stack.
+       - path: specifies the path in the URL,
+       - element: specifies which component should render when the path is matched
+
+<RouterProvider> - take data router objects to render the app
+
+<Link> - is used to navigate between routes.
+
+<NavLink> is a special kind of <Link> that knows whether or not it is "active", "pending", or "transitioning".
+
+<Outlet> should be used in parent route elements to render their child route elements.
+
+{ index: true, element: <Navigate to={'path'} /> }: indicates the default route for particular layout.
+When the root path is matched, this route will redirect to the "path" route using the <Navigate /> component.
+
+useNavigate - allows navigate between different routes in application (the same as Link to)
+    -state object: is used to pass data from one route to another
+    -navigate(-1 or 1):takes you to the previous page or the next page in the history stack
+    -{replace:true}: it changes the navigation behavior by replacing the current entry in the browser's history stack, rather than adding a new entry.
+useLocation - allows to access the state passed from the source route
+

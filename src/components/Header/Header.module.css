@@ -1,0 +1,16 @@
+.Header{
+    display: flex;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    justify-content: space-around;
+    align-items: center;
+}
+.Header a{
+    text-decoration: none;
+    color: white;
+}
+.Header a[class='active']{
+    color: deeppink;
+}
