@@ -17,6 +17,7 @@ import {Expense} from "./components/Form/Expense";
 import {ProductList} from "./components/ProductList/ProductList";
 import {ProductSelect} from "./components/ProductList/ProductSelect";
 import {Users} from "./components/JsonPlaceholder/Users";
+
 const App = () => {
     // const items = ["New York", "San Francisco", "Tokyo", "London"];
     //
@@ -58,7 +59,8 @@ const App = () => {
 
            {/*<ProductSelect/>*/}
 
-            <Users/>
+            {/*<Users/>*/}
+
         </div>
     );
 };
