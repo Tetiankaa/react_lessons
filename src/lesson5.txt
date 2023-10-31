@@ -1,0 +1,6 @@
+useParams - allows to access URL parameters.
+
+"loader" function - used to provide data to the route element before it renders.
+       - {params}: allows to access URL parameters
+
+useLoaderData - provides the value returned from route loader.
