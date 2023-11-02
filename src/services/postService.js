@@ -1,8 +1,8 @@
-import {axiosService} from "./axiosService";
-import {urls} from "../constants/urls";
-
-const postService = {
-    getAll:()=>axiosService.get(urls.posts.base),
-    getById:(postId)=>axiosService.get(urls.posts.byId(postId))
-}
-export {postService}
+// import {axiosServiceDummy} from "./axiosServiceDummy";
+// import {urls} from "../constants/urls";
+//
+// const postServiceDummy = {
+//     getAll:()=>axiosServiceDummy.get(urls.posts.base),
+//     getById:(postId)=>axiosServiceDummy.get(urls.posts.byId(postId))
+// }
+// export {postServiceDummy}

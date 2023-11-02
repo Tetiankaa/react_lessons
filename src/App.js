@@ -59,7 +59,7 @@ const App = () => {
 
            {/*<ProductSelect/>*/}
 
-            {/*<Users/>*/}
+            <Users/>
 
         </div>
     );
