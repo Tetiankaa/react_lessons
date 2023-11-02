@@ -1,0 +1,12 @@
+Context - is used to share data between components without having to explicitly pass it through props at each level.
+Context.Provider - is used to provide the context value to components.
+        -value: specifies the data we want to share.
+useContext - is used to access the value provided by Context.Provider
+
+children - is used for passing content to a component.
+
+Higher Order Component (HOC) - is used for reusing component logic.
+
+useSearchParams - is used to read and manipulate URL query parameters
+        - query: holds the current query parameters from the URL.
+        - setQuery is a function that allows to update the query parameters in the URL.
