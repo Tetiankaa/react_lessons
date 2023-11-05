@@ -10,6 +10,7 @@ const Cars = () => {
 
     useEffect(() => {
         carService.getAll(query.get('page')).then(({data})=> {
+            console.log(data)
             setCars(data.items);
             setPrevNext({prev:data.prev, next: data.next});
         })
