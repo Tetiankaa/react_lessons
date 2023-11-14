@@ -1,0 +1,14 @@
+Redux is an open-source JavaScript library for managing and centralizing application state.
+Redux Toolkit ("RTK" for short) is official recommended approach for writing Redux logic.
+
+configureStore - is used to create a Redux store with specified configurations
+Provider - is used to make the store available to the entire React component tree by wrapping the root component
+
+"slice" refers to a logical portion of the application's state and the corresponding set of actions and reducers that manage that part of the state
+createSlice - is used to define the name of the slice, the initial state, and a set of reducer functions.
+Reducers are functions that describe how the state should change in response to different actions.
+Actions are created automatically based on the reducer functions.
+
+useSelector - allows to extract data or the state from the Redux store
+useDispatch -  hook gives the store's dispatch method as its result. That method is used to send actions to the Redux store, triggering state updates.
+        - payload is a mechanism for passing additional data to the reducer when an action is dispatched.
