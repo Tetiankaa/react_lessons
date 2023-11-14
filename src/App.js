@@ -60,9 +60,9 @@ const App = () => {
 
            {/*<ProductSelect/>*/}
 
-            {/*<Users/>*/}
+            <Users/>
 
-            <Widget/>
+            {/*<Widget/>*/}
         </div>
     );
 };
