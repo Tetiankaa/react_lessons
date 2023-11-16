@@ -1,0 +1,15 @@
+createAsyncThunk - is a function that accepts a string that represents the type of the thunk and a function that returns a promise.
+     It automatically generates three action types:
+        - pending action type is dispatched when the asynchronous operation begins.
+        - fulfilled action type is dispatched when the asynchronous operation is successfully completed
+        - rejected action type is dispatched when the asynchronous operation encounters an error
+
+extraReducers is useful when you need to respond to actions that are not directly related to the slice but still impact its state.
+
+thunkAPI(second argument of the async function) - it is an object with the following properties and methods:
+        - fulfillWithValue: a method that can be used to fulfill the promise with a specific value.
+        - rejectWithValue: a method that can be used to reject the promise with a specific value.
+
+addMatcher - allows to conditionally execute reducer logic based on specific criteria.
+        - matcher: a function that takes an action and returns true if the action should be handled by the provided reducer
+        - reducer: a function that will be executed if the matcher returns true.
