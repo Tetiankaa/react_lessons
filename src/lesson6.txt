@@ -10,3 +10,6 @@ Higher Order Component (HOC) - is used for reusing component logic.
 useSearchParams - is used to read and manipulate URL query parameters
         - query: holds the current query parameters from the URL.
         - setQuery is a function that allows to update the query parameters in the URL.
+
+interceptors.request.use  is used to intercept and modify outgoing requests.
+You can add headers, authentication tokens, or perform other modifications to the request configuration.
