@@ -1,0 +1,13 @@
+constructor method - gets called when the class is instantiated.
+super(props) - calls the constructor of the parent class
+
+componentDidMount(): Invoked after the component is rendered to the DOM. (data fetching)
+componentDidUpdate(): Invoked after the component is updated in the DOM.
+componentWillUnmount(): Invoked just before a component is removed from the DOM.
+
+useMemo - helps optimize performance by memoizing expensive calculations so that they are not re-computed on every render
+ unless the dependencies of the computation have changed.
+
+ useCallback  - helps optimize performance by preventing the recreation of functions on every render,
+  especially in scenarios where functions are passed down as props to child components.
+
